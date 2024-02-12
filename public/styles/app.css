@@ -27,11 +27,14 @@ img.logo__greenarchive-logo--modified {
 }
 
 header.navbar {
+   /* ! 92vh left */
+   height: 8vh;
    padding: 0px 10px 0px 10px;
    display: flex;
    flex-direction: row;
    align-items: center;
    justify-content: space-between;
+   background-color: #ddd1a4;
 }
 
 /* Section Login and Register Button */
@@ -41,73 +44,103 @@ section.login {
    gap: 15px;
 }
 
-/* Section Greetings */
-section.greetings {
-   padding: 0px 10px 0px 10px;
-   margin: 10px 0px 0px 0px;
-   display: flex;
-   flex-direction: row;
+.login__button-n-register {
+   width: 100px;
+   height: 35px;
+   font-size: 16px;
+   border: none;
+   border-radius: 5px;
+   cursor: pointer;
+   transition: background-color 0.3s, color 0.3s;
 }
 
-h1.greetings__welcome {
+button.login__button-n-register.login-btn {
+   background-color: #386641;
+   color: #ffffff;
+   border: 2px solid #B6A977;
+}
+
+button.login__button-n-register.register-btn {
+   background-color: #6A994E;
+   color: #ffffff;
+   border: 2px solid #B6A977;
+}
+
+button.login__button-n-register:hover {
+   background-color: #dacd99;
+   color: #386641;
+}
+
+section.greetings-whole-content {
+   height: 92vh;
+   display: flex;
+   flex-direction: column;
+}
+
+section.greetings__content {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+div.greetings__welcome {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+h1.greetings__welcome-text {
    font-size: 1.8rem;
 }
 
-span.greetings__span-greenarchive {
-   margin-top: -70px;
-   display: inline-block;
-   font-size: 3rem;
+h1.greetings__greenarchive-text {
+   font-size: 3.5rem;
 }
 
-h5.greetings__welcome--subscript {
+p.greetings__slogan-text {
    font-size: 0.90rem;
+   font-weight: bold;
 }
 
-/* Section Image */
-section.section-image {
-   display: none;
+p.description__text {
+   padding: 0px 10px 0px 10px;
+   text-align: justify;
+   font-size: 1.3rem;
+   text-indent: 2rem;
 }
 
-/* Potted Plants Image */
-img.section-image__potted-plants--modified {
+div.description__scroll-content {
+   padding: 0px 0px;
+   display: flex;
+   justify-content: flex-end;
+}
+
+button.description__scroll-button {
+   margin: 20px 10px 0px 0px;
+   width: 100px;
+   height: 50px;
+   font-size: 1rem;
+   color: #ffffff;
+   background-color: #386641;
+   border: 2px solid #B6A977;
+   border-radius: 5px;
+   cursor: pointer;
+   transition: background-color 0.3s, color 0.3s;
+}
+
+button.description__scroll-button:hover {
+   background-color: #6A994E;
+   color: #432818;
+}
+
+img.greetings__mobile-image--modified {
    width: 300px;
    height: 300px;
 }
 
-/* Description Content */
-section.description {
-   padding: 0px 10px 0px 10px;
-   margin: 10px 0px 20px 0px;
-}
-
-p.description__layout {
-   font-size: 1.3rem;
-   text-align: justify;
-}
-
-/* Section Articles */
-section.articles {
-   padding: 0px 10px 0px 10px;
-   display: flex;
-   flex-direction: column;
-   font-size: 1rem;
-}
-
-div.articles__header {
-   font-size: 1.4em;
-}
-
-div.articles__content {
-   display: flex;
-   flex-direction: column;
-   justify-content: space-evenly;
-}
-
-h4.articles__card-header {
-   font-size: 1.3em;
-}
-
-p.articles__card-content {
-   font-size: 1.2em;
-   text-align: justify;
+/* Potted Plants Image */
+img.section-image__potted-plants--modified {
+   display: none;
+   width: 300px;
+   height: 300px;
 }

@@ -19,76 +19,88 @@
       </section>
       <section class="login">
          <div class="login__login-button">
-            <button>Login</button>
+            <button class="login__button-n-register login-btn">Login</button>
          </div>
          <div class="login__register-button">
-            <button>Register</button>
+            <button class="login__button-n-register register-btn">Register</button>
          </div>
       </section>
    </header>
    <main class=main-content>
-   
       <!--Section Greetings -->
-      <section class="greetings">
-         <section>
+      <section class="greetings-whole-content">
+         <section class="greetings__content">
             <div>
-               <h1 class="greetings__welcome">Welcome to<span class="greetings__span-greenarchive"><br>GreenArchive!</span></h1>
+               <img class="greetings__mobile-image--modified" src="{{ asset('images/strelitzia plant-rafiki.png') }}" alt="">
+            </div>
+
+            <div class="greetings__welcome">
+               <div>
+                  <h1 class="greetings__welcome-text">Welcome To</h1>
+               </div>
+               <div>
+                  <h1 class="greetings__greenarchive-text">GreenArchive!</h1>
+               </div>
             </div>
 
             <div>
-               <h5 class="greetings__welcome--subscript">[Unveiling the Botanical Wonders of our World]</h5> 
+               <p class="greetings__slogan-text">[Unveiling the Botanical Wonders of our World]</p> 
             </div>
          </section>
 
-         <section class="section-image">
+         <section>
             <div>
                <img class="section-image__potted-plants--modified" src="{{ asset('images/potted plants-rafiki.png') }}" alt="">
             </div>
-         </section>      
+         </section>
+
+         <section class="description">
+            <div>
+               <p class="description__text">Discover the enchanting world of plant biodiversity with GreenArchive. As a hub for botanical exploration and documentation, we invite you to embark on a journey through the lush landscapes of nature, where each leaf tells a unique story.</p> 
+            </div>
+
+            <div class="description__scroll-content">
+               <button class="description__scroll-button">Learn More!</button>
+            </div>
+         </section>
       </section>
 
-      <section class="description">
+      <section>
          <div>
-            <p class="description__layout">Discover the enchanting world of plant biodiversity with GreenArchive. As a hub for botanical exploration and documentation, we invite you to embark on a journey through the lush landscapes of nature, where each leaf tells a unique story.</p> 
-         </div>
-      </section>
-
-      <section class="articles">
-         <div class="articles__header">
             <h1>What Sets Us Apart?</h1>
          </div>
-         <div class="articles__content">
-            <section class="articles__card">
+         <div>
+            <section>
                <div>
-                  <h4 class="articles__card-header">Explore Diverse Specimens</h4>
+                  <h4>Explore Diverse Specimens</h4>
                </div>
                <div>
-                  <p class="articles__card-content">Immerse yourself in a vast collection of meticulously preserved plant specimens, each a testament to the richness of our planet's flora.</p>
-               </div>
-            </section>
-
-            <section class="articles__card">
-               <div>
-                  <h4 class="articles__card-header">User-Generated Botanical Chronicles</h4>
-               </div>
-               <div>
-                  <p class="articles__card-content">Become a part of our community by contributing your own botanical discoveries. Share your photos, documentations, and stories to create a collaborative tapestry of plant life.</p>
+                  <p>Immerse yourself in a vast collection of meticulously preserved plant specimens, each a testament to the richness of our planet's flora.</p>
                </div>
             </section>
 
-            <section class="articles__card">
+            <section>
                <div>
-                  <h4 class="articles__card-header">Educational Insights</h4>
+                  <h4>User-Generated Botanical Chronicles</h4>
                </div>
                <div>
-                  <p class="articles__card-content">Gain insights into the fascinating world of botany. From detailed plant descriptions to ecological notes, our herbarium is a treasure trove of knowledge.</p>
+                  <p>Become a part of our community by contributing your own botanical discoveries. Share your photos, documentations, and stories to create a collaborative tapestry of plant life.</p>
+               </div>
+            </section>
+
+            <section>
+               <div>
+                  <h4>Educational Insights</h4>
+               </div>
+               <div>
+                  <p>Gain insights into the fascinating world of botany. From detailed plant descriptions to ecological notes, our herbarium is a treasure trove of knowledge.</p>
                </div>
             </section>
          </div>            
       </section>
 
-      <section class="gallery">
-         <section class="gallery__description">
+      <section>
+         <section>
             <div>
                <h1>Upload your Botanical Tales</h1>
             </div>
@@ -98,8 +110,8 @@
          </section>
       </section>
 
-      <section class="community">
-         <section class="community__join">
+      <section>
+         <section>
             <div>
                <h1>Join the Botanical Community</h1>
             </div>
@@ -110,8 +122,8 @@
          </section>
       </section>
 
-      <section class="start-explore">
-         <section class="start-explore__now">
+      <section>
+         <section">
             <div>
                <h1>Start Exploring Now</h1>
             </div>
