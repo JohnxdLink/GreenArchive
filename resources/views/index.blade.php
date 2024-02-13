@@ -68,14 +68,30 @@
 
       <!-- Eplore -->
       <section class="explore-whole-content">
-         <div class="explore__bg-image-content">
-            <img class="explore__bg-image" src="{{ asset('images/Questions-rafiki.png') }}" alt="">
-         </div>
-         
+
          <div class="explore__ask">
-            <h1>What</h1>
-            <h1>Sets</h1>
-            <h1>Us Apart?</h1>
+            <div class="explore__ask-text">
+               <div>
+                  <h1 class="explore__ask-text--layout">What</h1>
+               </div>
+
+               <div>
+                  <h1 class="explore__ask-text--layout">Sets</h1>
+               </div>
+
+               <div>
+                  <h1 class="explore__ask-text--layout">Us Apart?</h1>
+               </div>
+            </div>
+
+            <div class="explore__ask-image">
+               <img class="explore__ask-image--layout" src="{{ asset('images/Questions-rafiki.png') }}" alt="">
+            </div>
+
+            <div class="explore__ask-next-btn">
+               <button class="explore__ask-next-btn--layout">Next</button>
+            </div>
+            
          </div>
          <div style="display: none;">
             <section>

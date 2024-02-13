@@ -15,6 +15,11 @@
    --body-font: 'Roboto', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
    --default-logo-width: 130px;
    --default-logo-height: 52px;
+   --color-one: #386641;
+   --color-two: #FFE6A7;
+   --color-three: #B6A977;
+   --color-four: #6A994E;
+   --color-five: #432818;
 }
 
 html {
@@ -150,23 +155,48 @@ section.explore-whole-content {
    display: flex;
    /* ! Viewing for mobile set as column */
    flex-direction: column;
-   width: 100vw;
+   background-color: #ede3ca;
    height: 100vh;
-   background-color: #ddd1a4;
-}
-
-/* Explore Image */
-div.explore__bg-image-content {
-   position: absolute;
-   right: 0px;
-   bottom: -765px;
-}
-
-img.explore__bg-image {
-   width: 570px;
-   height: 570px;
 }
 
 div.explore__ask {
-   z-index: 1;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   margin: 70px 20px 0px 20px;
+   height: 55vh;
+   color: var(--color-one);
+   background-color: #ddc589;
+   border: 10px solid var(--color-five);
+   border-radius: 10px;
+}
+
+h1.explore__ask-text--layout {
+   font-size: 3.5rem;
+}
+
+img.explore__ask-image--layout {
+   margin-top: 20px;
+   width: 300px;
+   height: 300px;
+   background-color: var(--color-two);
+   border: 10px solid var(--color-five);
+   border-radius: 10px;
+}
+
+button.explore__ask-next-btn--layout {
+   margin-top: 20px;
+   padding: 10px 40px;
+   font-size: 1.5rem;
+   border: none;
+   border-radius: 5px;
+   cursor: pointer;
+   background-color: #6A994E;
+   color: #FFE6A7;
+   transition: background-color 0.3s, color 0.3s;
+}
+
+button.explore__ask-next-btn--layout:hover {
+   background-color: #432818;
+   color: #B6A977;
 }
