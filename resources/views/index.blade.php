@@ -27,6 +27,7 @@
       </section>
    </header>
    <main class=main-content>
+
       <!--Section Greetings -->
       <section class="greetings-whole-content">
          <section class="greetings__content">
@@ -65,11 +66,18 @@
          </section>
       </section>
 
-      <section>
-         <div>
-            <h1>What Sets Us Apart?</h1>
+      <!-- Eplore -->
+      <section class="explore-whole-content">
+         <div class="explore__bg-image-content">
+            <img class="explore__bg-image" src="{{ asset('images/Questions-rafiki.png') }}" alt="">
          </div>
-         <div>
+         
+         <div class="explore__ask">
+            <h1>What</h1>
+            <h1>Sets</h1>
+            <h1>Us Apart?</h1>
+         </div>
+         <div style="display: none;">
             <section>
                <div>
                   <h4>Explore Diverse Specimens</h4>
