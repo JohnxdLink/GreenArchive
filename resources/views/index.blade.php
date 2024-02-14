@@ -10,6 +10,7 @@
    <meta name="author" content="Castro John Christian">
    <title>GreenArchive | Welcome</title>
    <link rel="stylesheet" href="{{ asset('styles/app.css') }}">
+   <link rel="stylesheet" href="{{ asset('styles/w3-animation.css') }}">
    <link rel="icon" href="{{ asset('images/GreenArchive-Logo.ico') }}" type="image/x-icon">
 </head>
 <body class="whole-content">
@@ -89,35 +90,49 @@
             </div>
 
             <div class="explore__ask-next-btn">
-               <button class="explore__ask-next-btn--layout">Next</button>
+               <button class="next-btn--layout">Next</button>
             </div>
             
          </div>
-         <div style="display: none;">
-            <section>
+
+         <div class="explore-define-content">
+            <section class="explore-define__section" style="display: none;">
                <div>
-                  <h4>Explore Diverse Specimens</h4>
+                  <h4 class="explore-define__header">Explore Diverse Specimens</h4>
                </div>
                <div>
-                  <p>Immerse yourself in a vast collection of meticulously preserved plant specimens, each a testament to the richness of our planet's flora.</p>
+                  <p class="explore-define__description">Immerse yourself in a vast collection of meticulously preserved plant specimens, each a testament to the richness of our planet's flora.</p>
+               </div>
+
+               <div>
+                  <button class="next-btn--layout">Next</button>
                </div>
             </section>
 
-            <section>
+            <section class="explore-define__section" style="display: none;">
                <div>
-                  <h4>User-Generated Botanical Chronicles</h4>
+                  <h4 class="explore-define__header">User-Generated Botanical Chronicles</h4>
                </div>
                <div>
-                  <p>Become a part of our community by contributing your own botanical discoveries. Share your photos, documentations, and stories to create a collaborative tapestry of plant life.</p>
+                  <p class="explore-define__description">Become a part of our community by contributing your own botanical discoveries. Share your photos, documentations, and stories to create a collaborative tapestry of plant life.</p>
+               </div>
+
+               <div>
+                  <button class="next-btn--layout">Next</button>
                </div>
             </section>
 
-            <section>
+            <section class="explore-define__section" style="display: none;">
                <div>
-                  <h4>Educational Insights</h4>
+                  <h4 class="explore-define__header">Educational Insights</h4>
                </div>
+
                <div>
-                  <p>Gain insights into the fascinating world of botany. From detailed plant descriptions to ecological notes, our herbarium is a treasure trove of knowledge.</p>
+                  <p class="explore-define__description">Gain insights into the fascinating world of botany. From detailed plant descriptions to ecological notes, our herbarium is a treasure trove of knowledge.</p>
+               </div>
+
+               <div>
+                  <button class="next-btn--layout">Return</button>
                </div>
             </section>
          </div>            

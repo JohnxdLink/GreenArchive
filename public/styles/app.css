@@ -154,17 +154,20 @@ img.section-image__potted-plants--modified {
 section.explore-whole-content {
    display: flex;
    /* ! Viewing for mobile set as column */
-   flex-direction: column;
+   flex-direction: row;
+   align-items: center;
+   justify-content: center;
    background-color: #ede3ca;
    height: 100vh;
 }
 
 div.explore__ask {
+   margin: -200px 0px 0px 0px;
    display: flex;
    flex-direction: column;
    align-items: center;
-   margin: 70px 20px 0px 20px;
-   height: 55vh;
+   width: 400px;
+   height: 400px;
    color: var(--color-one);
    background-color: #ddc589;
    border: 10px solid var(--color-five);
@@ -184,7 +187,7 @@ img.explore__ask-image--layout {
    border-radius: 10px;
 }
 
-button.explore__ask-next-btn--layout {
+button.next-btn--layout {
    margin-top: 20px;
    padding: 10px 40px;
    font-size: 1.5rem;
@@ -196,7 +199,31 @@ button.explore__ask-next-btn--layout {
    transition: background-color 0.3s, color 0.3s;
 }
 
-button.explore__ask-next-btn--layout:hover {
+button.next-btn--layout:hover {
    background-color: #432818;
    color: #B6A977;
+}
+
+/* Explore Define SEction */
+section.explore-define__section {
+   padding: 10px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   width: 370px;
+   height: 500px;
+   text-align: center;
+   background-color: var(--color-two);
+   border: 5px solid var(--color-five);
+   border-radius: 10px;
+}
+
+h4.explore-define__header {
+   font-size: 2.3rem;
+   color: var(--color-four);
+}
+
+p.explore-define__description {
+   font-size: 1.5rem;
+   color: #000000;
 }
