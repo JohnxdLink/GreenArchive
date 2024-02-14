@@ -1,3 +1,5 @@
+@import url('w3-animation.css');
+
 *,
 *::before,
 *::after {
@@ -24,6 +26,7 @@
 
 html {
    font-size: 16px;
+   scroll-behavior: smooth;
 }
 
 img.logo__greenarchive-logo--modified {
@@ -120,10 +123,10 @@ div.description__scroll-content {
    justify-content: flex-end;
 }
 
-button.description__scroll-button {
+a.description__scroll-button {
    margin: 20px 10px 0px 0px;
-   width: 100px;
-   height: 50px;
+   padding: 15px 20px 15px 20px;
+   text-decoration: none;
    font-size: 1rem;
    color: #ffffff;
    background-color: #386641;
@@ -133,7 +136,7 @@ button.description__scroll-button {
    transition: background-color 0.3s, color 0.3s;
 }
 
-button.description__scroll-button:hover {
+a.description__scroll-button:hover {
    background-color: #6A994E;
    color: #432818;
 }

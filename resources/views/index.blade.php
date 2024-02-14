@@ -10,7 +10,6 @@
    <meta name="author" content="Castro John Christian">
    <title>GreenArchive | Welcome</title>
    <link rel="stylesheet" href="{{ asset('styles/app.css') }}">
-   <link rel="stylesheet" href="{{ asset('styles/w3-animation.css') }}">
    <link rel="icon" href="{{ asset('images/GreenArchive-Logo.ico') }}" type="image/x-icon">
 </head>
 <body class="whole-content">
@@ -62,15 +61,15 @@
             </div>
 
             <div class="description__scroll-content">
-               <button class="description__scroll-button">Learn More!</button>
+               <a class="description__scroll-button" href="#explore-whole-content-id">Learn More!</a>
             </div>
          </section>
       </section>
 
       <!-- Eplore -->
-      <section class="explore-whole-content">
+      <section id="explore-whole-content-id" class="explore-whole-content">
 
-         <div class="explore__ask">
+         <div id="explore-ask-main" class="explore__ask w3-animate-opacity">
             <div class="explore__ask-text">
                <div>
                   <h1 class="explore__ask-text--layout">What</h1>
@@ -90,13 +89,13 @@
             </div>
 
             <div class="explore__ask-next-btn">
-               <button class="next-btn--layout">Next</button>
+               <button id="next-btn-main" class="next-btn--layout" onclick="open_define_one()">Next</button>
             </div>
             
          </div>
 
          <div class="explore-define-content">
-            <section class="explore-define__section" style="display: none;">
+            <section id="explore-define-one" class="explore-define__section w3-animate-opacity" style="display: none;">
                <div>
                   <h4 class="explore-define__header">Explore Diverse Specimens</h4>
                </div>
@@ -105,11 +104,11 @@
                </div>
 
                <div>
-                  <button class="next-btn--layout">Next</button>
+                  <button id="next-btn-one" class="next-btn--layout" onclick="open_define_two()">Next</button>
                </div>
             </section>
 
-            <section class="explore-define__section" style="display: none;">
+            <section id="explore-define-two" class="explore-define__section w3-animate-opacity" style="display: none;">
                <div>
                   <h4 class="explore-define__header">User-Generated Botanical Chronicles</h4>
                </div>
@@ -118,11 +117,11 @@
                </div>
 
                <div>
-                  <button class="next-btn--layout">Next</button>
+                  <button id="next-btn-two" class="next-btn--layout" onclick="open_define_three()">Next</button>
                </div>
             </section>
 
-            <section class="explore-define__section" style="display: none;">
+            <section id="explore-define-three" class="explore-define__section w3-animate-opacity" style="display: none;">
                <div>
                   <h4 class="explore-define__header">Educational Insights</h4>
                </div>
@@ -132,7 +131,7 @@
                </div>
 
                <div>
-                  <button class="next-btn--layout">Return</button>
+                  <button id="next-btn-three" class="next-btn--layout" onclick="open_define_return()">Return</button>
                </div>
             </section>
          </div>            
@@ -172,5 +171,7 @@
          </section>
       </section>
    </main>
+
+   <script src="{{ asset('js/script.js') }}"></script>
 </body>
 </html>
