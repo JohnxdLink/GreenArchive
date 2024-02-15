@@ -230,12 +230,57 @@ img.explore-define__images {
    height: 350px;
 }
 
-h4.explore-define__header {
+h4.explore-define__header,
+h1.botanical-tale__header,
+h1.botanical-community__header,
+h1.start-exploring__haeder {
    font-size: 2.3rem;
    color: var(--color-four);
 }
 
-p.explore-define__description {
+p.explore-define__description,
+p.botanical-define__description,
+p.botanical-community__description,
+p.start-exploring__description {
    font-size: 1.5rem;
    color: #000000;
+}
+
+/* Botanical Tale Content */
+section.botanical-tale-content {
+   padding: 10px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: space-evenly;
+   height: 100vh;
+   background-color: var(--color-two);
+}
+
+img.botanical-tale__image,
+img.botanical-community__image,
+img.start-exploring__image {
+   width: 400px;
+   height: 400px;
+}
+
+/* Botanical Community Content */
+section.botanical-community-content {
+   padding: 10px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: space-evenly;
+   height: 100vh;
+   background-color: #ede3ca;
+}
+
+section.start-exploring-content {
+   padding: 10px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: space-evenly;
+   height: 100vh;
+   background-color: #d1c9b5;
 }

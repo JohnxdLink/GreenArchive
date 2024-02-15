@@ -154,36 +154,56 @@
          </div>            
       </section>
 
-      <section>
+      <!-- Botany Gallery -->
+      <section class="botanical-tale-content">
          <section>
             <div>
-               <h1>Upload your Botanical Tales</h1>
+               <img class="botanical-tale__image" src="{{ asset('images/Image upload-bro.png') }}" alt="">
+            </div>
+         </section>
+
+         <section>
+            <div>
+               <h1 class="botanical-tale__header">Upload your Botanical Tales</h1>
             </div>
             <div>
-               <p>Have a unique plant discovery to share? Upload your photos and documentations to our Herbarium. Join a community passionate about preserving and celebrating the diverse tapestry of plant life.</p>
+               <p class="botanical-define__description">Have a unique plant discovery to share? Upload your photos and documentations to our Herbarium. Join a community passionate about preserving and celebrating the diverse tapestry of plant life.</p>
             </div>
          </section>
       </section>
 
-      <section>
+      <!-- Botanical Community -->
+      <section class="botanical-community-content">
+         <sectio>
+            <div>
+               <img class="botanical-community__image" src="{{ asset('images/planting tree-bro.png')}}" alt="">
+            </div>
+         </sectio>
          <section>
             <div>
-               <h1>Join the Botanical Community</h1>
+               <h1 class="botanical-community__header">Join the Botanical Community</h1>
             </div>
 
             <div>
-               <p>Connect with fellow plant enthusiasts, researchers, and botanists. Share your insights, seek identification help, and be a part of a global network united by a love for plants.</p>
+               <p class="botanical-community__description">Connect with fellow plant enthusiasts, researchers, and botanists. Share your insights, seek identification help, and be a part of a global network united by a love for plants.</p>
             </div>
          </section>
       </section>
 
-      <section>
+      <!-- Start Exploring -->
+      <section class="start-exploring-content">
+         <section>
+            <div>
+               <img class="start-exploring__image" src="{{ asset('images/Collection-amico.png')}}" alt="">
+            </div>
+         </section>
+
          <section">
             <div>
-               <h1>Start Exploring Now</h1>
+               <h1 class="start-exploring__haeder">Start Exploring Now</h1>
             </div>
             <div>
-               <p>Begin your botanical adventure with GreenArchive. Every page is a step into the green realms of discovery. Start exploring and contribute to the ever-growing compendium of plant knowledge.</p>
+               <p class="start-exploring__description">Begin your botanical adventure with GreenArchive. Every page is a step into the green realms of discovery. Start exploring and contribute to the ever-growing compendium of plant knowledge.</p>
             </div>
          </section>
       </section>
