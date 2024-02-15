@@ -97,10 +97,16 @@
          <div class="explore-define-content">
             <section id="explore-define-one" class="explore-define__section w3-animate-opacity" style="display: none;">
                <div>
-                  <h4 class="explore-define__header">Explore Diverse Specimens</h4>
+                  <img class="explore-define__images" src="{{ asset('images/Wilderness-rafiki.png') }}" alt="">
                </div>
+
                <div>
-                  <p class="explore-define__description">Immerse yourself in a vast collection of meticulously preserved plant specimens, each a testament to the richness of our planet's flora.</p>
+                  <div>
+                     <h4 class="explore-define__header">Explore Diverse Specimens</h4>
+                  </div>
+                  <div>
+                     <p class="explore-define__description">Immerse yourself in a vast collection of meticulously preserved plant specimens, each a testament to the richness of our planet's flora.</p>
+                  </div>
                </div>
 
                <div>
@@ -110,10 +116,16 @@
 
             <section id="explore-define-two" class="explore-define__section w3-animate-opacity" style="display: none;">
                <div>
-                  <h4 class="explore-define__header">User-Generated Botanical Chronicles</h4>
+                  <img class="explore-define__images" src="{{ asset('images/Social Growth-pana.png') }}" alt="">
                </div>
+
                <div>
-                  <p class="explore-define__description">Become a part of our community by contributing your own botanical discoveries. Share your photos, documentations, and stories to create a collaborative tapestry of plant life.</p>
+                  <div>
+                     <h4 class="explore-define__header">User-Generated Botanical Chronicles</h4>
+                  </div>
+                  <div>
+                     <p class="explore-define__description">Become a part of our community by contributing your own botanical discoveries. Share your photos, documentations, and stories to create a collaborative tapestry of plant life.</p>
+                  </div>
                </div>
 
                <div>
@@ -123,11 +135,16 @@
 
             <section id="explore-define-three" class="explore-define__section w3-animate-opacity" style="display: none;">
                <div>
-                  <h4 class="explore-define__header">Educational Insights</h4>
+                  <img class="explore-define__images" src="{{ asset('images/college campus-bro.png') }}" alt="">
                </div>
-
+               
                <div>
-                  <p class="explore-define__description">Gain insights into the fascinating world of botany. From detailed plant descriptions to ecological notes, our herbarium is a treasure trove of knowledge.</p>
+                  <div>
+                     <h4 class="explore-define__header">Educational Insights</h4>
+                  </div>
+                  <div>
+                     <p class="explore-define__description">Gain insights into the fascinating world of botany. From detailed plant descriptions to ecological notes, our herbarium is a treasure trove of knowledge.</p>
+                  </div>
                </div>
 
                <div>

@@ -190,8 +190,11 @@ img.explore__ask-image--layout {
    border-radius: 10px;
 }
 
-button.next-btn--layout {
+#next-btn-main {
    margin-top: 20px;
+}
+
+button.next-btn--layout {
    padding: 10px 40px;
    font-size: 1.5rem;
    border: none;
@@ -212,13 +215,19 @@ section.explore-define__section {
    padding: 10px;
    display: flex;
    flex-direction: column;
-   justify-content: center;
-   width: 370px;
-   height: 500px;
+   justify-content: space-evenly;
+   align-items: center;
    text-align: center;
+   width: 90vw;
+   height: 90vh;
    background-color: var(--color-two);
    border: 5px solid var(--color-five);
    border-radius: 10px;
+}
+
+img.explore-define__images {
+   width: 350px;
+   height: 350px;
 }
 
 h4.explore-define__header {
