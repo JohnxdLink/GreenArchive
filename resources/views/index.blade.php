@@ -207,6 +207,61 @@
             </div>
          </section>
       </section>
+
+      <section class="register-form-content">
+         <form method="post" action="">
+            <div>
+               <div>
+                  <label for="">Username</label>
+                  <input type="text" name="name" id="" placeholder="Username" required>
+               </div>
+
+               <div>
+                  <label for="">Email</label>
+                  <input type="text" name="email" id="" placeholder="Email" required>
+               </div>
+
+               <div>
+                  <label for="">Password</label>
+                  <input type="password" name="password" id="" placeholder="Password" required>
+               </div>
+
+               <div>
+                  <label for="">Confirm Password</label>
+                  <input type="password" name="password_confirmation" id="" placeholder="Confiirm Password" required>
+               </div>
+
+               <div>
+                  <label for="">Address</label>
+                  <input type="text" name="location" id="" placeholder="Location">
+               </div>
+
+               <div>
+                  <label for="">Occupation</label>
+                  <input type="text" name="occupation" id="" placeholder="Occupation">
+               </div>
+
+               <div>
+                  <label for="">Biography</label>
+                  <textarea name="bio" id="" cols="30" rows="10"></textarea>
+               </div>
+
+               <div>
+                  <label for="certified_botanist">Certified Botanist</label>
+                  <input type="checkbox" name="certified_botanist" id="" value="1">                  
+               </div>
+
+               <div>
+                  <input type="checkbox" name="agree_terms" id="agree_terms" value="1" required>
+                  <label for="agree_terms">I agree to the terms and conditions</label>
+               </div>
+            </div>
+
+            <div>
+               <input type="submit" value="Register">
+            </div>
+         </form>
+      </section>
    </main>
 
    <script src="{{ asset('js/script.js') }}"></script>
