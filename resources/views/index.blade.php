@@ -209,7 +209,9 @@
       </section>
 
       <section class="register-form-content">
-         <form method="post" action="">
+         <form method="post" action="{{ route('register.store') }}">
+            @csrf
+            @method('post')
             <div>
                <div>
                   <label for="">Username</label>
@@ -260,6 +262,12 @@
             <div>
                <input type="submit" value="Register">
             </div>
+
+            @if(session('success'))
+               <div style="display:flex;">
+                  <h1>{{ session('success') }}</h1>
+               </div>
+            @endif
          </form>
       </section>
    </main>
