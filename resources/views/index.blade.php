@@ -209,7 +209,7 @@
       </section>
 
       <section class="register-form-content">
-         <form method="post" action="{{ route('register.store') }}">
+         <form method="post" action="{{ route('register.account') }}">
             @csrf
             @method('post')
             <div>
@@ -254,7 +254,7 @@
                </div>
 
                <div>
-                  <input type="checkbox" name="agree_terms" id="agree_terms" value="1" required>
+                  <input type="checkbox" name="agree_terms" id="" value="1" required>
                   <label for="agree_terms">I agree to the terms and conditions</label>
                </div>
             </div>
@@ -262,12 +262,6 @@
             <div>
                <input type="submit" value="Register">
             </div>
-
-            @if(session('success'))
-               <div style="display:flex;">
-                  <h1>{{ session('success') }}</h1>
-               </div>
-            @endif
          </form>
       </section>
    </main>

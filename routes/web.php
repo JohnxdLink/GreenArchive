@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AccountController;
+use App\Models\Account;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,10 +14,8 @@ use App\Http\Controllers\AccountController;
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::get('/', [AccountController::class, 'index_page']) -> name('index.page');
+Route::post('/', [AccountController::class, 'registered_get_data']) -> name('register.account');
 
-Route::get('/', function () {
-    return view('index');
-});
-
-Route::get('/register', [AccountController::class, 'create'])->name('register.create');
-Route::post('/register', [AccountController::class, 'store'])->name('register.store');
+Route::get('/success', [AccountController::class, 'success']) -> name('success.account');
+Route::get('/failed', [AccountController::class, 'failed']) -> name('failed.account');

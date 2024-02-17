@@ -7,35 +7,34 @@ use App\Models\Account;
 
 class AccountController extends Controller
 {
-    //
-    public function create()
-    {
+    public function index_page() {
         return view('index');
     }
-    
-    public function store(Request $request)
-    {
-        // Validation
-        $validatedData = $request->validate([
-            'name' => 'required|string|max:255',
-            'email' => 'required|email|unique:green_archive_accounts|max:255',
-            'password' => 'required|string|min:8|confirmed',
-            'location' => 'nullable|string|max:255',
-            'occupation' => 'nullable|string|max:255',
-            'bio' => 'nullable|string',
+
+    public function registered_get_data(Request $request) {
+        // ! dd($request); for checking if the data is requested to post
+        
+        $validate_registered_data = $request -> validate([
+            'name' => 'required',
+            'email' => 'required',
+            'password' => 'required',
+            'location' => 'nullable',
+            'occupation' => 'nullable',
+            'bio' => 'nullable',
             'certified_botanist' => 'boolean',
-            'agree_terms' => 'required|boolean',
+            'agree_terms' => 'boolean'
         ]);
 
-        // Create a new account
-        $newAccount = Account::create($validatedData);
+        $new_account = Account::create($validate_registered_data);
 
-        if (!$newAccount) {
-            // Log or dd() any errors
-            dd('Error saving account');
-        }
+        return redirect(route('info-page.success'));
+    }
 
-        // Redirect with success message
-        return redirect()->route('register.create')->with('success', 'Registered Successfully');
+    public function success() {
+        return view('info-page.success');
+    }
+
+    public function failed() {
+        return view('info-page.failed');
     }
 }
