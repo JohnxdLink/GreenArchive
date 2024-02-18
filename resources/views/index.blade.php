@@ -209,7 +209,7 @@
       </section>
 
       <section class="register-form-content">
-         <form method="post" action="{{ route('register.account') }}">
+         <form method="post" action="">
             @csrf
             @method('post')
             <div>
