@@ -19,10 +19,10 @@
       </section>
       <section class="login">
          <div class="login__login-button">
-            <button class="login__button-n-register login-btn">Login</button>
+            <a class="login__button-n-register login-btn" href="{{ route('login.account') }}">Login</a>
          </div>
          <div class="login__register-button">
-            <button class="login__button-n-register register-btn">Register</button>
+            <a class="login__button-n-register register-btn" href="{{ route('register.account') }}">Register</a>
          </div>
       </section>
    </header>
@@ -206,61 +206,6 @@
                <p class="start-exploring__description">Begin your botanical adventure with GreenArchive. Every page is a step into the green realms of discovery. Start exploring and contribute to the ever-growing compendium of plant knowledge.</p>
             </div>
          </section>
-      </section>
-
-      <section class="register-form-content">
-            <form method="" action=""> 
-               <div>
-                  <div>
-                     <label for="name">Username</label>
-                     <input type="text" name="name" id="name" placeholder="Username" required>
-                  </div>
-
-                  <div>
-                     <label for="email">Email</label>
-                     <input type="text" name="email" id="email" placeholder="Email" required>
-                  </div>
-
-                  <div>
-                     <label for="password">Password</label>
-                     <input type="password" name="password" id="password" placeholder="Password" required>
-                  </div>
-
-                  <div>
-                     <label for="confirmed_password">Confirm Password</label>
-                     <input type="password" name="confirmed_password" id="confirmed_password" placeholder="Confirm Password" required>
-                  </div>
-
-                  <div>
-                     <label for="location">Address</label>
-                     <input type="text" name="location" id="location" placeholder="Location">
-                  </div>
-
-                  <div>
-                     <label for="occupation">Occupation</label>
-                     <input type="text" name="occupation" id="occupation" placeholder="Occupation">
-                  </div>
-
-                  <div>
-                     <label for="bio">Biography</label>
-                     <textarea name="bio" id="bio" cols="30" rows="10"></textarea>
-                  </div>
-
-                  <div>
-                     <label for="certified_botanist">Certified Botanist</label>
-                     <input type="checkbox" name="certified_botanist" id="certified_botanist" value="1">                  
-                  </div>
-
-                  <div>
-                     <input type="checkbox" name="agree_terms" id="agree_terms" value="1" required>
-                     <label for="agree_terms">I agree to the terms and conditions</label>
-                  </div>
-               </div>
-
-               <div>
-                  <input type="submit" value="Register">
-               </div>
-            </form>
       </section>
    </main>
 

@@ -14,6 +14,8 @@ use App\Http\Controllers\AccountController;
 |
 */
 Route::get('/', [AccountController::class, 'index_page']) -> name('index.page');
+Route::get('/login', [AccountController::class, 'login_page']) -> name('login.account');
+Route::get('/register', [AccountController::class, 'register_page']) -> name('register.account');
 
-Route::get('/success', [AccountController::class, 'success']) -> name('success.account');
-Route::get('/failed', [AccountController::class, 'failed']) -> name('failed.account');
+Route::get('/success', [AccountController::class, 'success_page']) -> name('success.account');
+Route::get('/failed', [AccountController::class, 'failed_page']) -> name('failed.account');
