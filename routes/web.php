@@ -13,9 +13,12 @@ use App\Http\Controllers\AccountController;
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::get('/', [AccountController::class, 'index_page']) -> name('index.page');
-Route::get('/login', [AccountController::class, 'login_page']) -> name('login.account');
-Route::get('/register', [AccountController::class, 'register_page']) -> name('register.account');
 
-Route::get('/success', [AccountController::class, 'success_page']) -> name('success.account');
-Route::get('/failed', [AccountController::class, 'failed_page']) -> name('failed.account');
+Route::get('/', [AccountController::class, 'index_page'])->name('index.page');
+Route::get('/login', [AccountController::class, 'login_page'])->name('login.account');
+Route::get('/register', [AccountController::class, 'register_page'])->name('register.account');
+
+Route::get('/success', [AccountController::class, 'success_page'])->name('success.account');
+Route::get('/failed', [AccountController::class, 'failed_page'])->name('failed.account');
+
+Route::post('/', [AccountController::class, 'insert_data'])->name('insert_registered.account');
