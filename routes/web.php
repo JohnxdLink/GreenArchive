@@ -2,7 +2,6 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AccountController;
-use App\Models\Account;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,7 +14,6 @@ use App\Models\Account;
 |
 */
 Route::get('/', [AccountController::class, 'index_page']) -> name('index.page');
-Route::post('/', [AccountController::class, 'registered_get_data']) -> name('register.account');
 
 Route::get('/success', [AccountController::class, 'success']) -> name('success.account');
 Route::get('/failed', [AccountController::class, 'failed']) -> name('failed.account');

@@ -209,60 +209,58 @@
       </section>
 
       <section class="register-form-content">
-         <form method="post" action="">
-            @csrf
-            @method('post')
-            <div>
+            <form method="" action=""> 
                <div>
-                  <label for="">Username</label>
-                  <input type="text" name="name" id="" placeholder="Username" required>
+                  <div>
+                     <label for="name">Username</label>
+                     <input type="text" name="name" id="name" placeholder="Username" required>
+                  </div>
+
+                  <div>
+                     <label for="email">Email</label>
+                     <input type="text" name="email" id="email" placeholder="Email" required>
+                  </div>
+
+                  <div>
+                     <label for="password">Password</label>
+                     <input type="password" name="password" id="password" placeholder="Password" required>
+                  </div>
+
+                  <div>
+                     <label for="confirmed_password">Confirm Password</label>
+                     <input type="password" name="confirmed_password" id="confirmed_password" placeholder="Confirm Password" required>
+                  </div>
+
+                  <div>
+                     <label for="location">Address</label>
+                     <input type="text" name="location" id="location" placeholder="Location">
+                  </div>
+
+                  <div>
+                     <label for="occupation">Occupation</label>
+                     <input type="text" name="occupation" id="occupation" placeholder="Occupation">
+                  </div>
+
+                  <div>
+                     <label for="bio">Biography</label>
+                     <textarea name="bio" id="bio" cols="30" rows="10"></textarea>
+                  </div>
+
+                  <div>
+                     <label for="certified_botanist">Certified Botanist</label>
+                     <input type="checkbox" name="certified_botanist" id="certified_botanist" value="1">                  
+                  </div>
+
+                  <div>
+                     <input type="checkbox" name="agree_terms" id="agree_terms" value="1" required>
+                     <label for="agree_terms">I agree to the terms and conditions</label>
+                  </div>
                </div>
 
                <div>
-                  <label for="">Email</label>
-                  <input type="text" name="email" id="" placeholder="Email" required>
+                  <input type="submit" value="Register">
                </div>
-
-               <div>
-                  <label for="">Password</label>
-                  <input type="password" name="password" id="" placeholder="Password" required>
-               </div>
-
-               <div>
-                  <label for="">Confirm Password</label>
-                  <input type="password" name="password_confirmation" id="" placeholder="Confiirm Password" required>
-               </div>
-
-               <div>
-                  <label for="">Address</label>
-                  <input type="text" name="location" id="" placeholder="Location">
-               </div>
-
-               <div>
-                  <label for="">Occupation</label>
-                  <input type="text" name="occupation" id="" placeholder="Occupation">
-               </div>
-
-               <div>
-                  <label for="">Biography</label>
-                  <textarea name="bio" id="" cols="30" rows="10"></textarea>
-               </div>
-
-               <div>
-                  <label for="certified_botanist">Certified Botanist</label>
-                  <input type="checkbox" name="certified_botanist" id="" value="1">                  
-               </div>
-
-               <div>
-                  <input type="checkbox" name="agree_terms" id="" value="1" required>
-                  <label for="agree_terms">I agree to the terms and conditions</label>
-               </div>
-            </div>
-
-            <div>
-               <input type="submit" value="Register">
-            </div>
-         </form>
+            </form>
       </section>
    </main>
 
