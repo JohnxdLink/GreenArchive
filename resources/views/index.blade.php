@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
    <meta charset="UTF-8">
    <meta name="language" content="English">
@@ -12,6 +13,7 @@
    <link rel="stylesheet" href="{{ asset('styles/app.css') }}">
    <link rel="icon" href="{{ asset('images/GreenArchive-Logo.ico') }}" type="image/x-icon">
 </head>
+
 <body class="whole-content">
    <header class="navbar">
       <section class="logo">
@@ -45,7 +47,7 @@
             </div>
 
             <div>
-               <p class="greetings__slogan-text">[Unveiling the Botanical Wonders of our World]</p> 
+               <p class="greetings__slogan-text">[Unveiling the Botanical Wonders of our World]</p>
             </div>
          </section>
 
@@ -57,7 +59,7 @@
 
          <section class="description">
             <div>
-               <p class="description__text">Discover the enchanting world of plant biodiversity with GreenArchive. As a hub for botanical exploration and documentation, we invite you to embark on a journey through the lush landscapes of nature, where each leaf tells a unique story.</p> 
+               <p class="description__text">Discover the enchanting world of plant biodiversity with GreenArchive. As a hub for botanical exploration and documentation, we invite you to embark on a journey through the lush landscapes of nature, where each leaf tells a unique story.</p>
             </div>
 
             <div class="description__scroll-content">
@@ -91,7 +93,7 @@
             <div class="explore__ask-next-btn">
                <button id="next-btn-main" class="next-btn--layout" onclick="open_define_one()">Next</button>
             </div>
-            
+
          </div>
 
          <div class="explore-define-content">
@@ -137,7 +139,7 @@
                <div>
                   <img class="explore-define__images" src="{{ asset('images/college campus-bro.png') }}" alt="">
                </div>
-               
+
                <div>
                   <div>
                      <h4 class="explore-define__header">Educational Insights</h4>
@@ -151,7 +153,7 @@
                   <button id="next-btn-three" class="next-btn--layout" onclick="open_define_return()">Return</button>
                </div>
             </section>
-         </div>            
+         </div>
       </section>
 
       <!-- Botany Gallery -->
@@ -205,10 +207,11 @@
             <div>
                <p class="start-exploring__description">Begin your botanical adventure with GreenArchive. Every page is a step into the green realms of discovery. Start exploring and contribute to the ever-growing compendium of plant knowledge.</p>
             </div>
-         </section>
+      </section>
       </section>
    </main>
 
    <script src="{{ asset('js/script.js') }}"></script>
 </body>
+
 </html>
