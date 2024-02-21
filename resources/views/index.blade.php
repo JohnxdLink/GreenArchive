@@ -31,7 +31,7 @@
    <main class=main-content>
 
       <!--Section Greetings -->
-      <section class="greetings-whole-content">
+      <!-- <section class="greetings-whole-content">
          <section class="greetings__content">
             <div>
                <img class="greetings__mobile-image--modified" src="{{ asset('images/strelitzia plant-rafiki.png') }}" alt="">
@@ -66,7 +66,7 @@
                <a class="description__scroll-button" href="#explore-whole-content-id">Learn More!</a>
             </div>
          </section>
-      </section>
+      </section> -->
 
       <!-- Eplore -->
       <section id="explore-whole-content-id" class="explore-whole-content">

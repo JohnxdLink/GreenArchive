@@ -14,7 +14,12 @@ use App\Http\Controllers\AccountController;
 |
 */
 
-Route::get('/', [AccountController::class, 'index_page'])->name('index.page');
+// Route::get('/', function () {
+//    return view('welcome');
+// });
+
+//Route::get('/', [AccountController::class, 'index_page'])->name('index.page');
+Route::get('/home', [AccountController::class, 'landing_page'])->name('landing.page');
 Route::get('/login', [AccountController::class, 'login_page'])->name('login.account');
 Route::get('/register', [AccountController::class, 'register_page'])->name('register.account');
 

@@ -12,6 +12,11 @@ class AccountController extends Controller
         return view('index');
     }
 
+    public function landing_page()
+    {
+        return view('landing-page.index');
+    }
+
     public function login_page()
     {
         return view('login-page.login');

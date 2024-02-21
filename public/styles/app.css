@@ -1,5 +1,7 @@
 @import url('w3-animation.css');
 
+/* Todo: 16px - 1rem || 18px - 1.125rem || 20px - 1.25rem || 24px - 1.5rem || 30px - 1.875rem || 32px - 2rem || 36px - 2.25rem */
+
 *,
 *::before,
 *::after {
@@ -25,8 +27,8 @@
 }
 
 html {
-   font-size: 16px;
    scroll-behavior: smooth;
+   font-size: 16px;
 }
 
 img.logo__greenarchive-logo--modified {
@@ -45,7 +47,7 @@ header.navbar {
    background-color: #ddd1a4;
 }
 
-/* Section Login and Register Button */
+/* ? Section Login and Register Button */
 section.login {
    display: flex;
    flex-direction: row;
@@ -79,41 +81,45 @@ a.login__button-n-register:hover {
    color: #386641;
 }
 
+/* ? Greetings Whole Content */
 section.greetings-whole-content {
+   padding: 0px 10px 0px 10px;
    height: 92vh;
    display: flex;
-   flex-direction: column;
+   flex-direction: row;
+   align-items: center;
+
 }
 
-section.greetings__content {
-   display: flex;
-   flex-direction: column;
-   align-items: center;
+/* ! Potted Plants Image */
+img.section-image__potted-plants--modified {
+   width: 600px;
+   height: 600px;
 }
 
-div.greetings__welcome {
+section.greetings__details {
    display: flex;
    flex-direction: column;
-   align-items: center;
 }
 
 h1.greetings__welcome-text {
-   font-size: 1.8rem;
+   font-size: 2.0rem;
 }
 
 h1.greetings__greenarchive-text {
-   font-size: 3.5rem;
+   margin-top: -20px;
+   font-size: 5rem;
 }
 
 p.greetings__slogan-text {
-   font-size: 0.90rem;
-   font-weight: bold;
+   margin-top: -10px;
+   font-size: 1.1rem;
 }
 
 p.description__text {
-   padding: 0px 10px 0px 10px;
+   margin-top: 10px;
+   font-size: 1.4rem;
    text-align: justify;
-   font-size: 1.3rem;
    text-indent: 2rem;
 }
 
@@ -141,19 +147,7 @@ a.description__scroll-button:hover {
    color: #432818;
 }
 
-img.greetings__mobile-image--modified {
-   width: 300px;
-   height: 300px;
-}
-
-/* Potted Plants Image */
-img.section-image__potted-plants--modified {
-   display: none;
-   width: 300px;
-   height: 300px;
-}
-
-/* Section Explore */
+/* ? Section Explore */
 section.explore-whole-content {
    display: flex;
    /* ! Viewing for mobile set as column */
