@@ -149,132 +149,40 @@ a.description__scroll-button:hover {
 
 /* ? Section Explore */
 section.explore-whole-content {
+   padding: 0px 10px 0px 10px;
    display: flex;
-   /* ! Viewing for mobile set as column */
    flex-direction: row;
    align-items: center;
-   justify-content: center;
    background-color: #ede3ca;
    height: 100vh;
 }
 
-div.explore__ask {
-   margin: -200px 0px 0px 0px;
+section.explore_image--modified {
    display: flex;
    flex-direction: column;
    align-items: center;
-   width: 400px;
-   height: 400px;
-   color: var(--color-one);
-   background-color: #ddc589;
-   border: 10px solid var(--color-five);
-   border-radius: 10px;
-}
-
-h1.explore__ask-text--layout {
-   font-size: 3.5rem;
 }
 
 img.explore__ask-image--layout {
-   margin-top: 20px;
-   width: 300px;
-   height: 300px;
-   background-color: var(--color-two);
-   border: 10px solid var(--color-five);
-   border-radius: 10px;
+   width: 500px;
+   height: 500px;
 }
 
-#next-btn-main {
-   margin-top: 20px;
+h1.explore__ask-text--layout {
+   font-size: 3rem;
 }
 
-button.next-btn--layout {
-   padding: 10px 40px;
-   font-size: 1.5rem;
-   border: none;
-   border-radius: 5px;
-   cursor: pointer;
-   background-color: #6A994E;
-   color: #FFE6A7;
-   transition: background-color 0.3s, color 0.3s;
+/* ? Section Explore Define */
+h1.explore-define__header--text {
+   font-size: 2.7rem;
 }
 
-button.next-btn--layout:hover {
-   background-color: #432818;
-   color: #B6A977;
+p.explore-define__details--text {
+   font-size: 1.7rem;
+   text-align: justify;
 }
 
-/* Explore Define SEction */
-section.explore-define__section {
-   padding: 10px;
+div.explore-define__button {
    display: flex;
-   flex-direction: column;
-   justify-content: space-evenly;
-   align-items: center;
-   text-align: center;
-   width: 90vw;
-   height: 90vh;
-   background-color: var(--color-two);
-   border: 5px solid var(--color-five);
-   border-radius: 10px;
-}
-
-img.explore-define__images {
-   width: 350px;
-   height: 350px;
-}
-
-h4.explore-define__header,
-h1.botanical-tale__header,
-h1.botanical-community__header,
-h1.start-exploring__haeder {
-   font-size: 2.3rem;
-   color: var(--color-four);
-}
-
-p.explore-define__description,
-p.botanical-define__description,
-p.botanical-community__description,
-p.start-exploring__description {
-   font-size: 1.5rem;
-   color: #000000;
-}
-
-/* Botanical Tale Content */
-section.botanical-tale-content {
-   padding: 10px;
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   justify-content: space-evenly;
-   height: 100vh;
-   background-color: var(--color-two);
-}
-
-img.botanical-tale__image,
-img.botanical-community__image,
-img.start-exploring__image {
-   width: 400px;
-   height: 400px;
-}
-
-/* Botanical Community Content */
-section.botanical-community-content {
-   padding: 10px;
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   justify-content: space-evenly;
-   height: 100vh;
-   background-color: #ede3ca;
-}
-
-section.start-exploring-content {
-   padding: 10px;
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   justify-content: space-evenly;
-   height: 100vh;
-   background-color: #d1c9b5;
+   justify-content: flex-end;
 }

@@ -58,8 +58,60 @@
             </div>
          </section>
       </section>
+
+      <section id="explore-whole-content-id" class="explore-whole-content">
+         <section class="explore_image--modified">
+            <div class="explore__ask-text">
+               <h1 class="explore__ask-text--layout">What sets us apart?</h1>
+            </div>
+            <div class="explore__ask-image">
+               <img id="explore__ask-image-one" class="explore__ask-image--layout w3-animate-right" src="{{ asset('images/Questions-rafiki.png') }}" alt="">
+               <img id="explore__ask-image-two" class="explore__ask-image--layout w3-animate-right" src="{{ asset('images/Social Growth-pana.png') }}" alt="" style="display: none;">
+               <img id="explore__ask-image-three" class="explore__ask-image--layout w3-animate-right" src="{{ asset('images/college campus-bro.png') }}" alt="" style="display: none;">
+            </div>
+         </section>
+
+         <section class="explore-define-content">
+            <div id="explore-define-one" class="explore-define--layout w3-animate-opacity">
+               <div class="explore-define__header">
+                  <h1 class="explore-define__header--text">Explore Diverse Specimens</h1>
+               </div>
+               <div class="explore-define__details">
+                  <p class="explore-define__details--text">Immerse yourself in a vast collection of meticulously preserved plant specimens, each a testament to the richness of our planet's flora.</p>
+               </div>
+               <div class="explore-define__button">
+                  <button class="explore-define__button--layout" onclick="open_define_two()">Next</button>
+               </div>
+            </div>
+
+            <div id="explore-define-two" class="explore-define--layout w3-animate-opacity" style="display: none;">
+               <div class="explore-define__header">
+                  <h1 class="explore-define__header--text">User-Generated Botanical Chronicles</h1>
+               </div>
+               <div class="explore-define__details">
+                  <p class="explore-define__details--text">Become a part of our community by contributing your own botanical discoveries. Share your photos, documentations, and stories to create a collaborative tapestry of plant life.</p>
+               </div>
+               <div class="explore-define__button">
+                  <button class="explore-define__button--layout" onclick="open_define_three()">Next</button>
+               </div>
+            </div>
+
+            <div id="explore-define-three" class="explore-define--layout w3-animate-opacity" style="display: none;">
+               <div class="explore-define__header">
+                  <h1 class="explore-define__header--text">Educational Insights</h1>
+               </div>
+               <div class="explore-define__details">
+                  <p class="explore-define__details--text">Gain insights into the fascinating world of botany. From detailed plant descriptions to ecological notes, our herbarium is a treasure trove of knowledge.</p>
+               </div>
+               <div class="explore-define__button">
+                  <button class="explore-define__button--layout" onclick="open_define_return()">Next</button>
+               </div>
+            </div>
+         </section>
+      </section>
    </main>
 
+   <script src="{{ asset('js/script.js') }}"></script>
 </body>
 
 </html>
