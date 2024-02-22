@@ -104,10 +104,25 @@
                   <p class="explore-define__details--text">Gain insights into the fascinating world of botany. From detailed plant descriptions to ecological notes, our herbarium is a treasure trove of knowledge.</p>
                </div>
                <div class="explore-define__button">
-                  <button class="explore-define__button--layout" onclick="open_define_return()">Next</button>
+                  <button class="explore-define__button--layout" onclick="open_define_return()">Return</button>
                </div>
             </div>
          </section>
+      </section>
+
+      <!-- Botany Gallery -->
+      <section class="botanical-tale-content">
+         <div>
+            <h1 class="botanical-tale__header">Upload your botanical tales</h1>
+         </div>
+
+         <div class="botanical-tale__image-content">
+
+         </div>
+
+         <div>
+            <p class="botanical-define__description">Have a unique plant discovery to share? Upload your photos and documentations to our Herbarium. Join a community passionate about preserving and celebrating the diverse tapestry of plant life.</p>
+         </div>
       </section>
    </main>
 

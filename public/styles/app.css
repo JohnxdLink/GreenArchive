@@ -186,3 +186,27 @@ div.explore-define__button {
    display: flex;
    justify-content: flex-end;
 }
+
+/* ? Botanical Content */
+section.botanical-tale-content {
+   height: 100vh;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: space-evenly;
+}
+
+h1.botanical-tale__header {
+   font-size: 2.5rem;
+}
+
+div.botanical-tale__image-content {
+   width: 90vw;
+   height: 65vh;
+   background-color: #386641;
+}
+
+p.botanical-define__description {
+   font-size: 1.7rem;
+   text-align: center;
+}
