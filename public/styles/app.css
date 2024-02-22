@@ -210,3 +210,28 @@ p.botanical-define__description {
    font-size: 1.7rem;
    text-align: center;
 }
+
+/* ? Botany Community Content */
+section.botanical-community-content {
+   padding: 10px;
+   height: 100vh;
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   gap: 10px;
+}
+
+h1.botanical-community__header {
+   font-size: 3rem;
+}
+
+p.botanical-community__description {
+   font-size: 1.7rem;
+   text-indent: 3rem;
+   text-align: justify;
+}
+
+img.botanical-community__image {
+   width: 550px;
+   height: 550px;
+}

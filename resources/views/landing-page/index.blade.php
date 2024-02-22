@@ -124,6 +124,23 @@
             <p class="botanical-define__description">Have a unique plant discovery to share? Upload your photos and documentations to our Herbarium. Join a community passionate about preserving and celebrating the diverse tapestry of plant life.</p>
          </div>
       </section>
+
+      <!-- Botany Community -->
+      <section class="botanical-community-content">
+         <section class="botanical-community__text-content">
+            <div>
+               <h1 class="botanical-community__header">Join the botanical community</h1>
+            </div>
+
+            <div>
+               <p class="botanical-community__description">Connect with fellow plant enthusiasts, researchers, and botanists. Share your insights, seek identification help, and be a part of a global network united by a love for plants.</p>
+            </div>
+         </section>
+
+         <section class="botanical-community__image-content">
+            <img class="botanical-community__image" src="{{ asset('images/planting tree-bro.png')}}" alt="">
+         </section>
+      </section>
    </main>
 
    <script src="{{ asset('js/script.js') }}"></script>
