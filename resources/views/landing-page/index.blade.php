@@ -11,6 +11,7 @@
    <meta name="author" content="Castro John Christian">
    <title>GreenArchive | Welcome</title>
    <link rel="stylesheet" href="{{ asset('styles/app.css') }}">
+   <link rel="stylesheet" href="{{ asset('styles/modal.css') }}">
    <link rel="stylesheet" href="{{ asset('styles/mobile.css') }}">
    <link rel="icon" href="{{ asset('images/GreenArchive-Logo.ico') }}" type="image/x-icon">
 </head>
@@ -164,7 +165,66 @@
             </div>
          </section>
       </section>
+
+
    </main>
+
+   <section class=register-section>
+      <form method="post" action="{{ route('insert_registered.account') }}">
+         @csrf
+         @method('post')
+         <div>
+            <div>
+               <label for="name">Username</label>
+               <input type="text" name="name" id="name" placeholder="Username" required>
+            </div>
+
+            <div>
+               <label for="email">Email</label>
+               <input type="text" name="email" id="email" placeholder="Email" required>
+            </div>
+
+            <div>
+               <label for="password">Password</label>
+               <input type="password" name="password" id="password" placeholder="Password" required>
+            </div>
+
+            <div>
+               <label for="confirmed_password">Confirm Password</label>
+               <input type="password" name="confirmed_password" id="confirmed_password" placeholder="Confirm Password" required>
+            </div>
+
+            <div>
+               <label for="location">Address</label>
+               <input type="text" name="location" id="location" placeholder="Location">
+            </div>
+
+            <div>
+               <label for="occupation">Occupation</label>
+               <input type="text" name="occupation" id="occupation" placeholder="Occupation">
+            </div>
+
+            <div>
+               <label for="bio">Biography</label>
+               <textarea name="bio" id="bio" cols="30" rows="10"></textarea>
+            </div>
+
+            <div>
+               <label for="certified_botanist">Certified Botanist</label>
+               <input type="checkbox" name="certified_botanist" id="certified_botanist" value="1">
+            </div>
+
+            <div>
+               <input type="checkbox" name="agree_terms" id="agree_terms" value="1" required>
+               <label for="agree_terms">I agree to the terms and conditions</label>
+            </div>
+         </div>
+
+         <div>
+            <input type="submit" value="Register">
+         </div>
+      </form>
+   </section>
 
    <script src="{{ asset('js/script.js') }}"></script>
 </body>
