@@ -59,6 +59,7 @@
          </section>
       </section>
 
+      <!-- Explore What Sets Us Apart -->
       <section id="explore-whole-content-id" class="explore-whole-content">
          <section class="explore_image--modified">
             <div class="explore__ask-text">
@@ -73,12 +74,15 @@
 
          <section class="explore-define-content">
             <div id="explore-define-one" class="explore-define--layout w3-animate-opacity">
+
                <div class="explore-define__header">
                   <h1 class="explore-define__header--text">Explore Diverse Specimens</h1>
                </div>
+
                <div class="explore-define__details">
                   <p class="explore-define__details--text">Immerse yourself in a vast collection of meticulously preserved plant specimens, each a testament to the richness of our planet's flora.</p>
                </div>
+
                <div class="explore-define__button">
                   <button class="explore-define__button--layout" onclick="open_define_two()">Next</button>
                </div>
@@ -139,6 +143,24 @@
 
          <section class="botanical-community__image-content">
             <img class="botanical-community__image" src="{{ asset('images/planting tree-bro.png')}}" alt="">
+         </section>
+      </section>
+
+      <!-- Start Exploring -->
+      <section class="start-exploring-content">
+         <section>
+            <div>
+               <img class="start-exploring__image" src="{{ asset('images/Collection-amico.png')}}" alt="">
+            </div>
+         </section>
+
+         <section>
+            <div>
+               <h1 class="start-exploring__header">Start Exploring Now</h1>
+            </div>
+            <div>
+               <p class="start-exploring__description">Begin your botanical adventure with GreenArchive. Every page is a step into the green realms of discovery. Start exploring and contribute to the ever-growing compendium of plant knowledge.</p>
+            </div>
          </section>
       </section>
    </main>

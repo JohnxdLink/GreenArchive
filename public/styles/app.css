@@ -65,19 +65,19 @@ a.login__button-n-register {
 }
 
 a.login__button-n-register.login-btn {
-   background-color: #386641;
+   background-color: var(--color-one);
    color: #ffffff;
-   border: 2px solid #B6A977;
+   border: 2px solid var(--color-three);
 }
 
 a.login__button-n-register.register-btn {
-   background-color: #6A994E;
+   background-color: var(--color-four);
    color: #ffffff;
-   border: 2px solid #B6A977;
+   border: 2px solid var(--color-three);
 }
 
 a.login__button-n-register:hover {
-   background-color: #dacd99;
+   background-color: var(--color-three);
    color: #386641;
 }
 
@@ -135,15 +135,15 @@ a.description__scroll-button {
    text-decoration: none;
    font-size: 1rem;
    color: #ffffff;
-   background-color: #386641;
-   border: 2px solid #B6A977;
+   background-color: var(--color-one);
+   border: 2px solid var(--color-three);
    border-radius: 5px;
    cursor: pointer;
    transition: background-color 0.3s, color 0.3s;
 }
 
 a.description__scroll-button:hover {
-   background-color: #6A994E;
+   background-color: var(--color-four);
    color: #432818;
 }
 
@@ -153,7 +153,7 @@ section.explore-whole-content {
    display: flex;
    flex-direction: row;
    align-items: center;
-   background-color: #ede3ca;
+   background-color: var(--color-four);
    height: 100vh;
 }
 
@@ -170,21 +170,42 @@ img.explore__ask-image--layout {
 
 h1.explore__ask-text--layout {
    font-size: 3rem;
+   color: var(--color-two);
 }
 
 /* ? Section Explore Define */
 h1.explore-define__header--text {
    font-size: 2.7rem;
+   color: var(--color-two);
 }
 
 p.explore-define__details--text {
    font-size: 1.7rem;
    text-align: justify;
+   color: #FFE6A7;
 }
 
 div.explore-define__button {
    display: flex;
    justify-content: flex-end;
+}
+
+button.explore-define__button--layout {
+   margin: 10px 0px 0px 0px;
+   width: 100px;
+   height: 50px;
+   font-size: 1.5rem;
+   color: var(--color-five);
+   background-color: var(--color-two);
+   border: 2px solid var(--color-five);
+   border-radius: 5px;
+   cursor: pointer;
+   transition: background-color 0.3s, color 0.3s;
+}
+
+button.explore-define__button--layout:hover {
+   background-color: var(--color-five);
+   color: var(--color-two);
 }
 
 /* ? Botanical Content */
@@ -194,21 +215,24 @@ section.botanical-tale-content {
    flex-direction: column;
    align-items: center;
    justify-content: space-evenly;
+   background-color: var(--color-two);
 }
 
 h1.botanical-tale__header {
    font-size: 2.5rem;
+   color: var(--color-five);
 }
 
 div.botanical-tale__image-content {
    width: 90vw;
    height: 65vh;
-   background-color: #386641;
+   background-color: var(--color-one);
 }
 
 p.botanical-define__description {
    font-size: 1.7rem;
    text-align: center;
+   color: var(--color-five);
 }
 
 /* ? Botany Community Content */
@@ -219,19 +243,49 @@ section.botanical-community-content {
    flex-direction: row;
    align-items: center;
    gap: 10px;
+   background-color: var(--color-three);
 }
 
 h1.botanical-community__header {
    font-size: 3rem;
+   color: var(--color-five);
 }
 
 p.botanical-community__description {
    font-size: 1.7rem;
    text-indent: 3rem;
    text-align: justify;
+   color: var(--color-five);
 }
 
 img.botanical-community__image {
    width: 550px;
    height: 550px;
+}
+
+/* ? Start Exploring Content */
+section.start-exploring-content {
+   padding: 10px;
+   height: 100vh;
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   background-color: var(--color-five);
+}
+
+img.start-exploring__image {
+   width: 500px;
+   height: 500px;
+}
+
+h1.start-exploring__header {
+   font-size: 3rem;
+   color: var(--color-two);
+}
+
+p.start-exploring__description {
+   font-size: 1.7rem;
+   text-indent: 3rem;
+   text-align: justify;
+   color: var(--color-three);
 }

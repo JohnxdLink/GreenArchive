@@ -200,14 +200,14 @@
             </div>
          </section>
 
-         <section">
+         <section>
             <div>
                <h1 class="start-exploring__haeder">Start Exploring Now</h1>
             </div>
             <div>
                <p class="start-exploring__description">Begin your botanical adventure with GreenArchive. Every page is a step into the green realms of discovery. Start exploring and contribute to the ever-growing compendium of plant knowledge.</p>
             </div>
-      </section>
+         </section>
       </section>
    </main>
 
