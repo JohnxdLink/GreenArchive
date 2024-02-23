@@ -11,6 +11,7 @@
    <meta name="author" content="Castro John Christian">
    <title>GreenArchive | Welcome</title>
    <link rel="stylesheet" href="{{ asset('styles/app.css') }}">
+   <link rel="stylesheet" href="{{ asset('styles/mobile.css') }}">
    <link rel="icon" href="{{ asset('images/GreenArchive-Logo.ico') }}" type="image/x-icon">
 </head>
 

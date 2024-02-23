@@ -7,11 +7,6 @@ use App\Models\Account;
 
 class AccountController extends Controller
 {
-    public function index_page()
-    {
-        return view('index');
-    }
-
     public function landing_page()
     {
         return view('landing-page.index');
